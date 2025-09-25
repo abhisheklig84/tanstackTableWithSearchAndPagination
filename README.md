@@ -24,4 +24,4 @@ You may also see any lint errors in the console.
 
 ### `Deployed Url`
 
-[https://effulgent-narwhal-416beb.netlify.app/](Open)
+[Link](https://effulgent-narwhal-416beb.netlify.app/)
