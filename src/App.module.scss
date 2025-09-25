@@ -1,0 +1,41 @@
+.appContainer {
+  background-color: #f5f5f5;
+  padding: 0px 60px;
+  min-height: 100dvh;
+
+  .tabWrapper {
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 1px solid rgb(64, 64, 64);
+    margin-bottom: 40px;
+
+    .tabButton {
+      cursor: pointer;
+      padding: 0 20px;
+      padding-bottom: 11px;
+      margin-bottom: -1px;
+
+      &.active {
+        border-bottom: 2px solid rgb(0, 0, 0);
+      }
+    }
+  }
+}
+
+.filterInput {
+  padding: 10px 10px;
+  background-color: #f0f5f5;
+  border-radius: 5px;
+  width: 150px;
+  border: 1px solid rgb(64, 64, 64);
+  &:focus {
+    outline: none;
+  }
+  margin: 10px 0;
+
+  &.hideInput {
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,134 @@
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+
+  .globalSearch {
+    padding: 10px 10px;
+    background-color: #f0f5f5;
+    border-radius: 5px;
+    width: 250px;
+    border: 1px solid rgb(64, 64, 64);
+    &:focus {
+      outline: none;
+    }
+    margin-bottom: 30px;
+  }
+
+  > table {
+    tr {
+      &::before {
+        content: "";
+        border-bottom: 1px solid rgba(28, 28, 28, 0.4);
+      }
+    }
+
+    th {
+      color: rgba(13, 13, 13, 0.4);
+    }
+
+    td {
+      color: #1c1c1c;
+    }
+  }
+
+  > table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+    border-radius: 20px;
+
+    tr {
+      white-space: nowrap;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+
+      th {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px; /* 150% */
+        padding: 8px 12px;
+        background-color: #f5fafa;
+
+        .header {
+          display: flex;
+          align-items: flex-start;
+          gap: 10px;
+        }
+
+        &:first-child {
+          text-align: left;
+        }
+      }
+    }
+    tr {
+      text-align: left;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+    }
+
+    td {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px; /* 150% */
+      white-space: nowrap;
+      background-color: inherit;
+      padding: 0px 12px;
+      height: 24px;
+      padding: 8px 12px;
+      text-align: left;
+      max-width: 100px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .paginationContainer {
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+
+    .topButtonSection {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      button {
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+
+    .bottomSection {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
